@@ -1,0 +1,480 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.BuySellBlocks{
+   
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+.root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.BuySellHeadingText{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    
+}
+
+.BuySellBlock{
+    background: #212529;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.SubmitOrderButton{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    height: 36px;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 3px;
+    border-color: #178b30;
+    background: #178b30;
+}
+
+.RadioButtonSelectorArea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+
+}
+.MiniRadioButtonSelector button{
+   
+    border: 1px solid #263043;
+    background: transparent;
+    border-radius: 3px;
+    height: 22px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #858e9f;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    line-height: 1;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+
+    
+    
+}
+
+.InputBoxBox{
+    height: 40px;
+    border-radius: 3px;
+    background-color: #222a39;
+    margin-bottom: 15px;
+}
+
+.InputOrderBoxField{
+    width: 100%;
+    line-height: 2em;
+    background: transparent !important;
+    border: 0;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
+.InputBoxFieldLabel{
+    font-size: 10px;
+    color: #818b9d;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*width: calc(100% - 75px); */
+    width: 20%;
+
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    background-color: #101010;
+    font-size: 0.6vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    color: azure;
+    justify-content: space-between;
+    height: 42px;
+    background-color: #1e2636;
+}
+
+.NavbarPart{
+   flex:1;
+   padding: 7px;
+}
+.NavbarPart.Right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NavbarPart.Left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.NavbarItem{
+    padding: 5px 10px 0 0;
+    font-size: 10px;
+    font-weight: 300;
+    color: #818b9d;
+}
+
+.NavbarItem div{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Logo{
+    width: 28px;
+    fill: white;
+    padding: 0 20px;
+    padding-right: 40px;
+}
+
+.SubmitButton form button{
+    width: auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+
+    border-radius: 3px;
+    background-color: #0dc3f9;
+    border: 2px solid #0dc3f9;
+    padding: 6px 12px;
+    margin: 0 3px;
+}
+
+.ContainerMain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    margin: 0;
+    align-items: stretch;
+    justify-content: stretch;
+    
+}
+.Container{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+
+.ContainerTop{
+    height: 55vh;
+    padding-top: 2px;
+}
+.ContainerBottom{
+    min-height: 600px;
+    
+}
+
+
+
+.OrdersSection{
+    background-color:#141721;
+    display: flex;
+    width: 45%;
+    height: inherit;
+    
+}
+
+.Charts{
+    width: 55%;
+    background-color: #0dc3f9;
+}   
+
+.Charts TradingViewWidget{
+    padding: 10px;
+}
+
+.MyOrders{
+    background-color:#0e1018;
+} 
+
+.OrderBook{
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #0e1018;
+    color: #8d96a6;
+    font-size: 11px;
+    font-weight: 700;
+    height: 98%;
+}
+
+.OrderBook ul{
+    list-style: none;
+    background-color: #0dc3f9;
+    padding: 0; /* To remove default left padding */
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 84%;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.OrderBookLi{
+    background: #141721;
+    margin: 0;
+    height: 15px;
+    
+}
+
+.OrderBookLi li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.OrderBookLi li div{
+    flex: 0 0 auto;
+    
+}
+
+.ListHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1e2636 !important;
+    border-bottom: 1px solid #263043;
+    font-size: 10px;
+    font-weight: 500;
+    color: #818b9d;
+    
+    line-height: 2em;
+    
+}
+.ListHeader div{
+  padding: 0 10px;
+}
+
+
+.BlockTitle{
+    align-content: center;
+    text-align: center;
+}
+
+.OrderBookHeader{
+    justify-content: space-between;
+
+    color: #ffffff;
+    padding: 0 10px;
+    display: flex;
+    background-color: #1e2636 !important;
+ 
+    border-bottom: 1px solid #263043;
+    border-radius: 2px 3px 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 15px 10px 15px;
+}
+
+.SVGIcon{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.OrderBookHeaderButtons button{
+    width: 24px;
+    height: 24px;
+
+    border-radius: 3px;
+    background-image:none !important;
+    background: #2c3445;
+    fill: #fff;
+    border: 0;
+    flex: 1;
+
+    
+
+}
+
+.OrderBookHeaderButtons{
+    align-content: center;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.OrderBookLiBar{
+    width: 100px; 
+    height: inherit;
+    background-color:rgba(255,75,75,0.2) ;
+    position: absolute;
+}
+
+
+  
+.ChartsHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #263043;
+    
+}
+
+.CoinTabs{ 
+
+}
+
+.CoinTabsLink{
+    color: #ffffff;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: transparent !important;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+
+.OrderBookLiPrice{
+    color: #ff4b4b;
+    
+}
+
+.OrderBookSeparator ul{
+    background-color: #1e2636 !important;
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    width: inherit;
+    justify-content: space-between;
+    padding: 10px 0px 0px 15px;
+    text-align: center;
+}
+
+.OrderBookSeparator ul li{
+    text-align: center;
+}
+.ScrollingOrders{
+    overflow-y: scroll;
+    position:relative;
+    
+}
+
+.TotalAmountBar{
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    color: #858e9f;
+    margin: 8px 0;
+}
+
+.TotalAmountBar span{
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+      
+    }
+
+    .Container{
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .Charts{
+        width: 100%;
+        height: 100%;
+    }
+    .OrdersSection{
+        width: 100%;
+    }
+  }
